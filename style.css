@@ -1,0 +1,16 @@
+:root { color-scheme: dark; --or: #e0b25a; --texte: #eadfc8; --doux: #b8a888; --fond: #120d0a; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, "Iowan Old Style", serif; background: var(--fond) radial-gradient(ellipse at top, #2a1a10 0%, var(--fond) 70%) no-repeat;
+       color: var(--texte); line-height: 1.65; font-size: 18px; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 24px 64px; }
+header { text-align: center; margin-bottom: 40px; }
+header img { width: 128px; height: 128px; border-radius: 28px; box-shadow: 0 8px 32px #000a; }
+h1 { color: var(--or); font-size: 2.2rem; letter-spacing: .04em; margin: 20px 0 4px; font-variant: small-caps; }
+h2 { color: var(--or); font-size: 1.25rem; margin-top: 2.2em; font-variant: small-caps; letter-spacing: .03em; }
+.accroche { color: var(--doux); font-style: italic; margin: 0; }
+a { color: var(--or); }
+ul { padding-left: 1.2em; }
+li { margin: .35em 0; }
+.maj { color: var(--doux); font-size: .9rem; }
+nav { text-align: center; margin-top: 48px; padding-top: 24px; border-top: 1px solid #e0b25a33; font-size: .95rem; }
+nav a { margin: 0 12px; }
