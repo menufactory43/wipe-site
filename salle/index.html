@@ -2,42 +2,13 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wipe ! — Rejoins la salle</title>
-<meta name="description" content="Un ami t'invite à jouer à Wipe ! avec lui.">
+<title>Wipe ! a déménagé</title>
 <meta name="robots" content="noindex">
-<link rel="icon" href="../icone.png">
-<link rel="stylesheet" href="../style.css">
+<link rel="canonical" href="https://wipedungeons.com/salle/">
+<script>location.replace("https://wipedungeons.com/salle/" + location.search + location.hash);</script>
+<meta http-equiv="refresh" content="0; url=https://wipedungeons.com/salle/">
 </head>
 <body>
-<main>
-<header>
-  <img src="../icone.png" alt="L'icône de Wipe !">
-  <h1>On t'attend à la taverne</h1>
-  <p class="accroche">Un ami t'invite dans son groupe.</p>
-</header>
-
-<p style="font-size:2.6em;letter-spacing:.25em;text-align:center;margin:.4em 0"><strong id="code">····</strong></p>
-<p style="text-align:center"><a id="ouvrir" class="bouton" href="wipe://">Ouvrir Wipe sur la salle</a></p>
-<p>Si Wipe ne s'ouvre pas : lance-le, va à la <strong>table du groupe</strong> de la taverne, touche
-« Jouer avec un ami » et tape le code ci-dessus.</p>
-
-<h2>Pas encore Wipe ?</h2>
-<p>Le jeu est en bêta : <a href="https://testflight.apple.com/join/UDBpmGAK">rejoins la bêta sur TestFlight</a>
-(iPhone et iPad), puis reviens sur cette page.</p>
-
-<p><a href="../">Accueil</a> · <a href="../support.html">Assistance</a> · <a href="../confidentialite.html">Confidentialité</a></p>
-</main>
-<script>
-  // le code de la salle (4 lettres) : affiché, et le lien qui ouvre le jeu dessus
-  const c = (new URLSearchParams(location.search).get('c') || '').toUpperCase().replace(/[^A-Z]/g, '').slice(0, 4);
-  if (c.length === 4) {
-    document.getElementById('code').textContent = c;
-    const a = document.getElementById('ouvrir');
-    a.href = 'wipe://salle/' + c;
-    // on essaie tout de suite (sans le jeu installé, rien ne se passe et la page reste)
-    setTimeout(() => { location.href = a.href; }, 300);
-  }
-</script>
+<p>Le site de Wipe ! a déménagé : <a href="https://wipedungeons.com/salle/">https://wipedungeons.com/salle/</a></p>
 </body>
 </html>
